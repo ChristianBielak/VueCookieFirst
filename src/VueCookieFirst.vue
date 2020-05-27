@@ -31,7 +31,7 @@ export default {
   props: {
     apiKey: {
       type: String,
-      default: "XXXXXX-XXXXX-XXXXX-XXXXX"
+      required: true
     },
     trans: {
       type: Object,
@@ -121,20 +121,8 @@ export default {
     }
   },
   computed: {
-    currentLang() {
-      return document.documentElement.lang;
-    },
-    title() {
-      return this.trans[this.currentLang].title;
-    },
-    text() {
-      return this.trans[this.currentLang].text;
-    },
-    acceptButton() {
-      return this.trans[this.currentLang].acceptButton;
-    },
-    declineButton() {
-      return this.trans[this.currentLang].declineButton;
+    foo() {
+      return window.CookieFirst;
     }
   }
 };

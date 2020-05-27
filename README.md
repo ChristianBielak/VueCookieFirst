@@ -1,24 +1,78 @@
 # vue-cookie-first
 
-## Project setup
+A simple Component for using Cookiefirst Custom Banner.
+
+## Installation
+
 ```
 yarn install
+or
+npm install
 ```
 
-### Compiles and hot-reloads for development
+## Usage
+
+### Register the Component
+
 ```
-yarn serve
+import VueCookieFirst from "vue-cookie-first";
+
+export default {
+  name: "Demo",
+  components: {
+    VueCookieFirst
+  }
+};
+
 ```
 
-### Compiles and minifies for production
+### Use the Component
+
 ```
-yarn build
+<vue-cookie-first api-key="XXXXX-XXXXXX-XXXXX-XXXXX-XXXXXXXX"></vue-cookie-first>
 ```
 
-### Lints and fixes files
-```
-yarn lint
+## Custom styling
+
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<template>
+    <vue-cookie-first api-key="XXXXX-XXXXXX-XXXXX-XXXXX-XXXXXXXX" :banner-style="cookieFirstStyle"></vue-cookie-first>
+</template>
+
+<script>
+import VueCookieFirst from 'vue-cookie-first';
+export default {
+    name: "Demo",
+    components: {
+        VueCookieFirst
+    },
+    data() {
+    return {
+      cookieFirstStyle: {
+        banner: {
+          backgroundColor: "#fff",
+          color: "#000"
+        },
+        acceptButton: {
+          backgroundColor: "#fff",
+          color: "#000",
+          borderColor: "#000",
+          borderRadius: 0,
+          borderWidth: "1px",
+          borderStyle: "solid"
+        },
+        declineButton: {
+          backgroundColor: "#fff",
+          color: "#000",
+          borderColor: "#000",
+          borderRadius: 0,
+          borderWidth: "1px",
+          borderStyle: "solid"
+        }
+      }
+    };
+  }
+}
+</script>
+```
