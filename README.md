@@ -95,7 +95,7 @@ export default {
     return {
       cookieFirstTrans: {
         de: {
-          headline: "Wir Verwenden Cookies",
+          title: "Wir Verwenden Cookies",
           text:
             "Wir können diese zur Analyse unserer Besucherdaten platzieren, um unsere Website zu verbessern, personalisierte Inhalte anzuzeigen und Ihnen ein großartiges Website-Erlebnis zu bieten. Für weitere Informationen zu den von uns verwendeten Cookies öffnen Sie die Einstellungen.",
           acceptButton: "akzeptieren",

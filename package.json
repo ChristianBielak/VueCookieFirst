@@ -1,6 +1,6 @@
 {
   "name": "vue-cookie-first",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "main": "dist/vue-cookie-first.umd.js",
   "module": "dist/vue-cookie-first.esm.js",
   "unpkg": "dist/vue-cookie-first.min.js",
