@@ -76,3 +76,41 @@ export default {
 }
 </script>
 ```
+
+## Custom Text
+
+```
+<template>
+    <vue-cookie-first api-key="XXXXX-XXXXXX-XXXXX-XXXXX-XXXXXXXX" :trans="cookieFirstTrans"></vue-cookie-first>
+</template>
+
+<script>
+import VueCookieFirst from 'vue-cookie-first';
+export default {
+    name: "Demo",
+    components: {
+        VueCookieFirst
+    },
+    data() {
+    return {
+      cookieFirstTrans: {
+        de: {
+          headline: "Wir Verwenden Cookies",
+          text:
+            "Wir können diese zur Analyse unserer Besucherdaten platzieren, um unsere Website zu verbessern, personalisierte Inhalte anzuzeigen und Ihnen ein großartiges Website-Erlebnis zu bieten. Für weitere Informationen zu den von uns verwendeten Cookies öffnen Sie die Einstellungen.",
+          acceptButton: "akzeptieren",
+          declineButton: "ablehnen"
+        },
+        en: {
+          title: "We are using Cookies",
+          text:
+            "This website uses cookies to ensure you get the best experience on our website. By using the website, you agree.",
+          acceptButton: "accept",
+          declineButton: "decline"
+        }
+      }
+    };
+  }
+}
+</script>
+```
