@@ -121,8 +121,20 @@ export default {
     }
   },
   computed: {
-    foo() {
-      return window.CookieFirst;
+    currentLang() {
+      return document.documentElement.lang;
+    },
+    title() {
+      return this.trans[this.currentLang].title;
+    },
+    text() {
+      return this.trans[this.currentLang].text;
+    },
+    acceptButton() {
+      return this.trans[this.currentLang].acceptButton;
+    },
+    declineButton() {
+      return this.trans[this.currentLang].declineButton;
     }
   }
 };
