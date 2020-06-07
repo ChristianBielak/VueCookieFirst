@@ -5,9 +5,9 @@ A simple Component for using Cookiefirst Custom Banner.
 ## Installation
 
 ```
-yarn install
+yarn add vue-cookie-first
 or
-npm install
+npm install vue-cookie-first
 ```
 
 ## Usage
